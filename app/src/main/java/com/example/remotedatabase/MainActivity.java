@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.
             getSimpleName();
     private static String url_select =
-            "http://10.0.2.2/tiumy/bacateman.php";
+            "https://20200140042.praktikumtiumy.com/bacateman.php";
     public static final String TAG_ID = "id";
     public static final String TAG_NAMA = "nama";
     public static final String TAG_TELPON = "telpom";

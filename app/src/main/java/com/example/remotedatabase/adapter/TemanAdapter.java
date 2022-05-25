@@ -54,8 +54,9 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
 
     @Override
     public void onBindViewHolder(TemanAdapter.TemanViewHolder holder, int position) {
-        String nm,tlp;
+        String id,nm,tlp;
 
+        id = listData.get(position).getId();
         nm = listData.get(position).getNama();
         tlp = listData.get(position).getTelpon();
 
@@ -120,7 +121,7 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
     }
 
     private void HapusData(final String idx) {
-        String url_update = "\"http://10.0.2.2/tiumy/deletetm.php";
+        String url_update = "https://20200140042.praktikumtiumy.com/deletetm.php";
         final String TAG = MainActivity.class.getSimpleName();
         final String TAG_SUCCES = "success";
         final int[] sukses = new int[1];
